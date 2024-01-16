@@ -1,0 +1,83 @@
+//Problema 4: Generar un procedimiento para calcular el valor de la planilla de luz y otro 
+procedimiento para calcular el valor del predio de un bien inmueble. Cada 
+procedimiento debe tener 2 parámetros (tipo cadena para nombre del cliente, 
+cédula del cliente).
+En el procedimiento de planilla de luz se debe pedir los siguiente datos valor 
+del kilowatio y el número de kilowatios del mes. Y se genera en pantalla el 
+siguiente reporte: Cliente Ana Contreras con cédula 1100112233 debe cancelar el 
+valor de $10
+
+En el procedimiento del predio se debe pedir el valor de inmueble y el para 
+obtener el valor del predio se saca el 2% del valor del inmueble. Y se genera 
+el siguiente reporte:
+
+Cliente Ana Contreras con cédula 1100112233 tiene un bien inmueble valorado en $
+30000 y tiene que pagar de predio $ 600.
+
+En el método principal; si el usuario ingresa 1 se llama al procedimiento 
+calcularValorLuz; 2 se llama al procedimiento calcularPredio. Los datos que se 
+necesita en cada procedimiento se los debe ingresar por teclado.
+
+1.) Inicio
+2.) Metodo Principal()
+3.) 	Definicion
+			opcion : i(0-n)
+			kilovatio, kilovatioMes, resultado1 = 0, resultado2 = 0, inmueble : d(0-n)
+			nombre, cedula : s(A-Z, a-z, " ")
+4.) Escribir "Ingrese su nombre y apellido"
+5.) Leer nombre
+6.) Escribir "Ingrese su cedula"
+7.) Leer cedula
+8.) Escribir "[1] Generar planilla de luz"
+9.) Escribir "[2] Generar Predio de un bien"
+10.) Leer opcion
+11.) Si(opcion = 1)
+12.) 	Escribir "Ingrese el valor del kilovatio: "
+13.)    Leer kilovatio
+14.)    Escribir "Ingrese el numero de kilovatios gastados en el mes"
+15.)    Leer kilovatioMes
+16.)    Escribir "Cliente ", nombre, " con cedula ", cedula, " debe cancelar el valor de: ", valorPlanillaLuz(kilovatio, kilovatioMes, resultado1)
+17.) FinSi
+18.) Si(opcion = 2)
+19.)	Escribir "Ingrese el valor del inmueble: "
+20.)    Leer inmueble
+21.) 	Escribir "Cliente ", nombre, " con cedula ", cedula, " debe cancelar el valor de: ", predioBienInmueble(inmueble, resultado2)
+22.) FinSi	
+
+1.) Funcion valorPlanillaLuz(kilovatio : d, kilovatioMes : d, resultado1 : d) : d
+2.) 	resultado1 = kilovatio*kilovatioMes
+3.) 	Devolver resultado1
+4.) FinFuncion valorPlanillaLuz
+
+1.) Funcion predioBienInmueble
+2.) 	resultado2 = inmueble*0.02
+3.) 	Devolver resultado2
+4.) FinFuncion predioBienInmueble
+
+Prueba de Escritorio
+
+Planilla de Luz:
+Ingrese su nombre y apellido
+Juan Guerrero
+Ingrese su cedula
+0151882527
+[1] Generar planilla de luz
+[2] Generar Predio de un bien
+1
+Ingrese el valor del kilovatio: 
+0.25
+Ingrese el numero de kilovatios gastados en el mes
+200
+Cliente Juan Guerrero con cedula 0151882527 debe cancelar el valor de: 50.0
+
+Predio de un bien: 
+Ingrese su nombre y apellido
+Juan Guerrero
+Ingrese su cedula
+0151882420
+[1] Generar planilla de luz
+[2] Generar Predio de un bien
+2
+Ingrese el valor del inmueble: 
+110000
+Cliente Juan Guerrero con cedula 0151882420 debe cancelar el valor de: 2200.0

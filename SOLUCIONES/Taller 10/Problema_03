@@ -1,0 +1,59 @@
+//Problema_03: Generar una función que tenga 4 parámetros de tipo decimal y devuelva el promedio
+cualitativo de los parámetros. Si el promedio es: De 0 a 5 el promedio cualitativo
+es Regular De 5.1 a 8 el promedio es Bueno De 8.1 a 9 el promedio es Muy Bueno 
+De 9.1 a 10 el promedio es Sobresaliente. A la función se la debe llamar desde un
+método principal. Los parámetros necesarios para llamar a la función, deben ser 
+ingresados solicitados al usuario.
+
+1.) Inicio
+2.)	Definicion
+		lim : i(4)
+		promedio[lim] : s(A-Z, a-z, " ") 
+3.) Metodo Principal()
+4.) 	Definicion
+			notas[lim] : d(0-10)
+5.)  Para (i = 0; i < notas(longitud); i = i+1)
+6.) 	Escribir "Ingrese la nota del estudiante ", (i+1)
+7.) 	Leer notas[i]
+8.)  FinPara
+9.)  promedioCualitativo(notas, promedio)
+10.) presentarPromedioCualitativo(promedio)
+11.) Fin Metodo Principal 
+
+1.) Funcion promedioCualitativo(notas[], promedio[]) : d
+2.)    Para (i = 0; i < notas(longitud); i = i + 1)
+3.)    		Si (notas[i] >= 0) Y (notas[i] <= 5)
+4.)         	promedio[i] = "Regular"
+5.)        	Sino (notas[i] >= 5.1) Y (notas[i] <= 8)
+6.)            	promedio[i] = "Bueno"
+7.)      	Sino (notas[i] >= 8.1) Y (notas[i] <= 9)
+8.)        		promedio[i] = "Muy bueno"
+9.)     	Sino
+10.)          	promedio[i] = "Sobresaliente"
+11.)		FinSino
+12.)		FinSino
+13.)		FinSino
+14.)        Finsi
+15.)   Finpara
+16.) FinFuncion promedioCualitativo
+
+1.) Funcion presentarPromedioCualitativo(Promedio[] : s) : s
+2.) 	Para (i = 0; i < promedio(longitud); i = i + 1)
+3.) 		Escribir "El estudiante numero ", (i+1), " tiene una nota ", promedio[i]
+4.)		FinPara
+5.)	FinFuncion presentarPromedioCualitativo
+
+Prueba de Escritorio
+
+Ingrese la nota del estudiante 1
+2
+Ingrese la nota del estudiante 2
+6
+Ingrese la nota del estudiante 3
+8.5
+Ingrese la nota del estudiante 4
+10
+El estudiante numero 1 tiene una nota Regular
+El estudiante numero 2 tiene una nota Bueno
+El estudiante numero 3 tiene una nota Muy bueno
+El estudiante numero 4 tiene una nota Sobresaliente

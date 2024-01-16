@@ -1,0 +1,79 @@
+//Problema_01: Generar los procedimientos y/o funciones que impriman los valor pares, impares 
+y el promedio de un arreglo bidimensional. El (los) procedimiento(s) o método(s)
+deben ser invocados desde el método principal (quien es el único responsable de 
+gestionar las entradas/salidas); además el método debe recibir como parámetro un
+arreglo bidimensional.
+
+1.) Inicio
+2.) Metodo Principal()
+3.) Definicion
+4.)		limF = 3, limC = 3 : i(n-0)
+5.)     Entero matriz1[][] = nuevo Entero [limF][limC]
+6.)     Entero matriz2[][] = nuevo Entero [limF][limC]
+7.)     Entero matriz3[][] = nuevo Entero [limF][limC]
+8.)	generarMatriz(matriz1)
+9.) Escribir "Matriz 1"
+10.) Escribir devolverMatriz(matriz1)
+11.) paresMatriz(matriz1, matriz2, limF, limC)
+12.) Escribir "Pares Matriz: "
+13.) devolverMatriz(matriz2, limF, limC)
+14.) imparesMatriz(matriz1, matriz3, limF, limC)
+15.) Escribir "Impares Matriz: "
+16.) devolverMatriz(matriz3, limF, limC)
+17.) Escribir "El promedio de la matriz es:", promedio(matriz1, limF, limC)
+18.)FinMetodo Principal
+
+1.) Metodo generarMatriz (matriz[][] : i, limC : i, limF : i) : i
+2.) 	Para (int i = 0; i < limF; i = i + 1)
+3.)			Para (int j = 0; i < limC; j = j + 1)
+4.)				  matriz [i][j] = azar(0-10)
+5.)			FinPara
+6.)		FinPara
+7.)	FinMetodo generarMatriz
+
+1.)	Funcion devolverMatriz(matriz [][] : i) : i
+2.)		cadena = "" : s(A-Z, a-z, " ")
+3.)		Para (i = 0; i < matriz(longitud); i = i + 1)
+4.) 		Para (j= 0; matriz[0](longitud); i = i + 1)
+5.) 			cadena = matriz[i][j]
+6.)			FinPara
+7.)		FinPara
+8.)		Devolver cadena
+9.)	FinFuncion devolverMatriz
+
+1.) Metodo paresMatriz (matriz1[][] : i, matriz2[][] : i limC : i, limF : i) : i
+2.) 	Para (int i = 0; i < limF; i = i + 1)
+3.)			Para (int j = 0; i < limC; j = j + 1)
+4.)				  Si ((matriz1 MOD 2) == 0)
+5.)					matriz2[i][j] = matriz1[i][j]
+6.)					Sino
+7.)						matriz2[i][j] = 0
+8.)					FinSino
+9.)				  FinSi
+10.)		FinPara
+11.)	FinPara
+12.)	FinMetodo paresMatriz
+
+1.) Metodo imparesMatriz (matriz1[][] : i, matriz3[][] : i limC : i, limF : i) : i
+2.) 	Para (int i = 0; i < limF; i = i + 1)
+3.)			Para (int j = 0; i < limC; j = j + 1)
+4.)				  Si ((matriz1 MOD 2) <> 0)
+5.)					matriz3[i][j] = matriz1[i][j]
+6.)					Sino
+7.)						matriz3[i][j] = 0
+8.)					FinSino
+9.)				  FinSi
+10.)		FinPara
+11.)	FinPara
+12.)	FinMetodo imparesMatriz
+
+1.) Funcion promedio (matriz1[][] : i, limF : i, limC : i) : d
+2.) 	promedio : d(0-n)
+3.) 	Para (int i = 0; i < limF; i = i + 1)
+4.)			Para (int j = 0; i < limC; j = j + 1)	
+5.)				promedio = promedio + matriz1[i][j]
+6.)			FinPara
+7.)		FinPara
+8.)		promedio = promedio/(limF*limC)
+9.)		Devolver promedio
+10.) FinFuncion promedio

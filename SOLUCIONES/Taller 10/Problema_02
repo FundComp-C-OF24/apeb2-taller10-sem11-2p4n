@@ -1,0 +1,88 @@
+//Problema 2: Generar una solución que implemente 3 procedimientos. Que permitan calcular el 
+área de un cuadrado, área de un triángulo y área de un rectángulo. Cada 
+procedimiento/función debe recibir los datos necesarios y generar el valor correspondiente.
+Se debe invocar a los procedimientos desde un método principal; Si el usuario ingresa
+1 se llama al procedimiento obtenerAreaCuadrado; 2 se llama al procedimiento 
+obtenerAreaTriangulo; 3 se llama al procedimiento obtenerAreaCuadrado.
+El área del cuadrado es igual a lado x lado x lado x lado
+El área del triángulo es igual a (base x altura)/2
+El área del rectángulo es igual a base x altura
+
+1.) Inicio
+2.) Metodo Principal()
+3.) 	Definicion
+			num1, num2 : d(0-n)
+			opcion : i(0-n)
+4.) Escribir "[1] Calcular el área de un triángulo"
+5.) Escribir "[2] Calcular el área de un cuadrado"
+6.) Escribir "[3] Calcular el área de un rectángulo"
+7.) Leer opcion
+9.) Si opcion es igual a 1 entonces
+10.)    Mostrar "Ingrese la base del triángulo: "
+11.)    Leer num1
+12.)    Mostrar "Ingrese la altura del triángulo: "
+13.)    Leer num2
+14.)    Mostrar "El área del triángulo es igual a: " + areaTriangulo(num1, num2)
+15.) FinSi
+
+16.) Si opcion es igual a 2 entonces
+17.)    Mostrar "Ingrese el lado del cuadrado: "
+18.)    Leer num1
+19.)    Mostrar "El área del cuadrado es igual a: " + areaCuadrado(num1)
+20.) FinSi
+
+21.) Si opcion es igual a 3 entonces
+22.)    Mostrar "Ingrese la base del rectángulo: "
+23.)    Leer num1
+24.)    Mostrar "Ingrese la altura del rectángulo: "
+25.)    Leer num2
+26.)    Mostrar "El área del rectángulo es igual a: " + areaRectangulo(num1, num2)
+27.) FinSi
+
+1.) Función areaTriangulo(num1, num2)
+2.)    Declarar respt como decimal
+3.)    respt = (num1 * num2) / 2
+4.)    Devolver respt
+5.) FinFuncion areaTriangulo
+
+1.) Función areaCuadrado(num1)
+2.)    Declarar respt como decimal
+3.)    respt = num1 ^ 2
+4.)    Devolver respt
+5.) FinFunción areaCuadrado
+
+1.) Función areaRectangulo(num1, num2)
+2.)    Declarar respt como decimal
+3.)    respt = num1 * num2
+4.)    Devolver respt
+5.) FinFunción areaRectangulo
+
+Prueba de Escritorio
+Triangulo:
+[1] Calcular el area de un triangulo
+[2] Calcular el area de un cuadrado
+[3] Calcular el area de un rectangulo
+1
+Ingrese la base del triangulo: 
+6
+Ingrese la altura lado del triangulo: 
+4
+El area del triangulo es igual a: 12.0
+Cuadrado:
+[1] Calcular el area de un triangulo
+[2] Calcular el area de un cuadrado
+[3] Calcular el area de un rectangulo
+2
+Ingrese un lado del cuadrado: 
+5
+El area del cuadrado es igual a: 25.0
+Rectangulo:
+[1] Calcular el area de un triangulo
+[2] Calcular el area de un cuadrado
+[3] Calcular el area de un rectangulo
+3
+Ingrese la base del rectangulo: 
+10
+Ingrese la altura del rectangulo: 
+4
+El area del rectangulo es igual a: 20.0
